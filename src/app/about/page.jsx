@@ -1,15 +1,10 @@
-import Register from "@/components/api/login/Register";
-import Image from "next/image";
-import AuthProvider from "./service/AuthProvider";
-import Link from "next/link";
+import React from 'react';
 
-
-export default function Home() {
-  return (
-    <main>
+const page = () => {
+    return (
         <div className="bg-black text-white h-screen py-12 ">
           <div className="flex items-center justify-around">
-            <h1 className="text-4xl font-bold mb-12">This is home page</h1>
+            <h1 className="text-4xl font-bold mb-12">This is About page</h1>
 
           </div>
 
@@ -21,6 +16,7 @@ export default function Home() {
             <div className="w-96 h-52 bg-red-400"></div>
           </div>
         </div>
-    </main>
-  );
-}
+    );
+};
+
+export default page;
